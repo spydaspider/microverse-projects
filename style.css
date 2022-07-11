@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+label {
+  display: none;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -71,21 +75,21 @@ ul a {
 }
 
 .base-links .base-link-text1 {
-  color: #1A30FF;
+  color: #1a30ff;
   border-radius: 8px;
   background: #ebebff;
   padding: 0.3em 0.5em;
 }
 
 .base-links .base-link-text2 {
-  color: #1A30FF;
+  color: #1a30ff;
   border-radius: 8px;
   background: #ebebff;
   padding: 0.3em 0.5em;
 }
 
 .base-links .base-link-text3 {
-  color: #1A30FF;
+  color: #1a30ff;
   border-radius: 8px;
   background: #ebebff;
   padding: 0.3em 0.5em;
@@ -102,7 +106,7 @@ ul a {
   font-weight: 600;
   font-size: 15px;
   line-height: 16px;
-  color: #4D5666;
+  color: #4d5666;
 }
 
 .text-2 {
@@ -112,7 +116,7 @@ ul a {
   font-weight: 600;
   font-size: 15px;
   line-height: 16px;
-  color: #4D5666;
+  color: #4d5666;
 }
 
 .text-3 {
@@ -122,7 +126,7 @@ ul a {
   font-weight: 600;
   font-size: 15px;
   line-height: 16px;
-  color: #4D5666;
+  color: #4d5666;
 }
 
 .base-button a {
@@ -141,7 +145,6 @@ ul a {
   color: #fff;
   border: none;
   transition: background-color 2s ease-out;
-  
 }
 
 .base-button a:active {
@@ -547,7 +550,7 @@ main p {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #1A30FF;
+  color: #1a30ff;
   padding-left: 0.3em;
 }
 
@@ -643,7 +646,7 @@ button[disabled] {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #1A30FF;
+  color: #1a30ff;
   padding-left: 1.2em;
   margin-top: 0;
   padding-top: 0;
@@ -689,7 +692,7 @@ button[disabled] {
   width: 100%;
   min-width: 375px;
   height: 779px;
-  background:  #1A30FF;
+  background: #1a30ff;
   border-top-left-radius: 70px;
 }
 
@@ -778,7 +781,7 @@ button[disabled] {
   border-radius: 6px;
   margin-top: 10px;
   width: 50%;
-  color: #1A30FF;
+  color: #1a30ff;
   font-size: 17px;
   line-height: 24px;
   font-weight: 500;
@@ -880,7 +883,7 @@ button[disabled] {
   border-radius: 6px;
   margin-top: 10px;
   width: 50%;
-  color: #1A30FF;
+  color: #1a30ff;
   font-size: 17px;
   line-height: 24px;
   font-weight: 500;
@@ -909,6 +912,10 @@ button[disabled] {
 
   a {
     text-decoration: none;
+  }
+
+  label {
+    display: none;
   }
 
   .list-container2-dt ul {
@@ -998,7 +1005,17 @@ button[disabled] {
     height: 800px;
     border-bottom-left-radius: 100px;
   }
-  #section-a-dt h2{
+
+  .s5-dt h2 {
+    color: #091e42;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 52px;
+    width: 170px;
+    padding: 0;
+  }
+
+  #section-a-dt h2 {
     width: 100%;
     font-weight: 700;
     font-size: 48px;
@@ -1009,8 +1026,6 @@ button[disabled] {
     text-align: center;
     text-align: left;
     padding-left: 5px;
-
-  
   }
 
   #section-a-dt .section-a-content-dt {
@@ -1022,7 +1037,7 @@ button[disabled] {
   #section-a-dt .base-text-dt {
     text-align: left;
     margin-top: 0;
-    color: #1A30FF;
+    color: #1a30ff;
   }
 
   .group-2 .tech ul {
@@ -1091,7 +1106,7 @@ button[disabled] {
     height: auto;
   }
 
-  #section-1 h2{
+  #section-1 h2 {
     display: flex;
     align-self: flex-start;
     font-style: normal;
@@ -1215,7 +1230,6 @@ button[disabled] {
     font-weight: 700;
     width: 290px;
     padding: 0;
-  
   }
 
   .list-container3-dt {
@@ -1277,15 +1291,6 @@ button[disabled] {
     border-top-right-radius: 180px;
   }
 
-  .s5-dt h2 {
-    color: #091e42;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 52px;
-    width: 170px;
-    padding: 0;
-  }
-
   .s5-dt .group-1 {
     display: flex;
     flex-flow: column;
@@ -1302,7 +1307,7 @@ button[disabled] {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #1A30FF;
+    color: #1a30ff;
     margin-left: 6px;
   }
 
@@ -1323,7 +1328,7 @@ button[disabled] {
   #section-7-dt {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background: #1A30FF;
+    background: #1a30ff;
     background-image: url("images/contact\ form\ background\ shapes@2x.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -1339,7 +1344,7 @@ button[disabled] {
   #section-7-dt .elements-dt .text-above-dt h3 {
     width: 300px;
     margin-left: 2em;
-    color: #ffffff;
+    color: #fff;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
