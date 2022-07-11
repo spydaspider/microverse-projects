@@ -689,7 +689,7 @@ button[disabled] {
   width: 100%;
   min-width: 375px;
   height: 779px;
-  background: #6070ff;
+  background:  #1A30FF;
   border-top-left-radius: 70px;
 }
 
@@ -1022,6 +1022,7 @@ button[disabled] {
   #section-a-dt .base-text-dt {
     text-align: left;
     margin-top: 0;
+    color: #1A30FF;
   }
 
   .group-2 .tech ul {
