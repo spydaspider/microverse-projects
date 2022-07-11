@@ -71,21 +71,21 @@ ul a {
 }
 
 .base-links .base-link-text1 {
-  color: #6070ff;
+  color: #1A30FF;
   border-radius: 8px;
   background: #ebebff;
   padding: 0.3em 0.5em;
 }
 
 .base-links .base-link-text2 {
-  color: #6070ff;
+  color: #1A30FF;
   border-radius: 8px;
   background: #ebebff;
   padding: 0.3em 0.5em;
 }
 
 .base-links .base-link-text3 {
-  color: #6070ff;
+  color: #1A30FF;
   border-radius: 8px;
   background: #ebebff;
   padding: 0.3em 0.5em;
@@ -547,7 +547,7 @@ main p {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #8893f3;
+  color: #1A30FF;
   padding-left: 0.3em;
 }
 
@@ -643,7 +643,7 @@ button[disabled] {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #1A30FF;
   padding-left: 1.2em;
   margin-top: 0;
   padding-top: 0;
@@ -1301,7 +1301,7 @@ button[disabled] {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #1A30FF;
     margin-left: 6px;
   }
 
