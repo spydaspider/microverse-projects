@@ -1322,7 +1322,7 @@ button[disabled] {
   #section-7-dt {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background: #6070ff;
+    background: #1A30FF;
     background-image: url("images/contact\ form\ background\ shapes@2x.png");
     background-repeat: no-repeat;
     background-position: center;
