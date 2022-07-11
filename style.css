@@ -285,7 +285,7 @@ main p {
   font-size: 22px;
 }
 
-#section-1 h1 {
+#section-1 h2 {
   display: flex;
   align-self: flex-start;
   width: 82px;
@@ -326,7 +326,7 @@ main p {
   margin-right: auto;
 }
 
-#section-2 h1 {
+#section-2 h2 {
   width: 200px;
   text-align: left;
   font-size: 35px;
@@ -369,7 +369,7 @@ main p {
   margin-right: auto;
 }
 
-#section-3 h1 {
+#section-3 h2 {
   display: flex;
   align-self: flex-start;
   width: 200px;
@@ -411,7 +411,7 @@ main p {
   background: #fff;
 }
 
-#section-4 h1 {
+#section-4 h2 {
   width: 200px;
   text-align: left;
   font-size: 35px;
@@ -547,7 +547,7 @@ main p {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #8893f3;
   padding-left: 0.3em;
 }
 
@@ -613,7 +613,7 @@ button[disabled] {
   margin-top: 1em;
 }
 
-#section-5 .head-text h1 {
+#section-5 .head-text h2 {
   display: flex;
   align-self: flex-start;
   width: 150px;
@@ -998,6 +998,20 @@ button[disabled] {
     height: 800px;
     border-bottom-left-radius: 100px;
   }
+  #section-a-dt h2{
+    width: 100%;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    line-height: 52px;
+    color: #172b4d;
+    display: flex;
+    text-align: center;
+    text-align: left;
+    padding-left: 5px;
+
+  
+  }
 
   #section-a-dt .section-a-content-dt {
     grid-column: 2/6;
@@ -1076,7 +1090,7 @@ button[disabled] {
     height: auto;
   }
 
-  #section-1 h1 {
+  #section-1 h2{
     display: flex;
     align-self: flex-start;
     font-style: normal;
@@ -1159,7 +1173,7 @@ button[disabled] {
     min-height: 100%;
   }
 
-  .s2-container-dt h2 {
+  .s2-container-dt h3 {
     display: flex;
     align-self: flex-start;
     width: 360px;
@@ -1194,12 +1208,13 @@ button[disabled] {
     min-height: 100%;
   }
 
-  .s3-container-dt h2 {
-    padding: 0;
+  .s3-container-dt h3 {
     font-size: 40px;
     color: #091e42;
     font-weight: 700;
-    width: 280px;
+    width: 290px;
+    padding: 0;
+  
   }
 
   .list-container3-dt {
@@ -1238,7 +1253,7 @@ button[disabled] {
     min-height: 100%;
   }
 
-  .s4-container-dt h2 {
+  .s4-container-dt h3 {
     display: flex;
     align-self: flex-start;
     width: 360px;
@@ -1320,9 +1335,14 @@ button[disabled] {
     grid-column: 6/7;
   }
 
-  #section-7-dt .elements-dt .text-above-dt h1 {
+  #section-7-dt .elements-dt .text-above-dt h3 {
     width: 300px;
     margin-left: 2em;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   #section-7-dt .elements-dt .text-above-dt p {
