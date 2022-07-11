@@ -141,6 +141,7 @@ ul a {
   color: #fff;
   border: none;
   transition: background-color 2s ease-out;
+  
 }
 
 .base-button a:active {
