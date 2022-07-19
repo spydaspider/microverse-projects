@@ -210,7 +210,8 @@ ul a {
   left: -120%;
   transition: 0.3s;
   padding-top: 4em;
-  margin-top: -0.3em;
+  margin-top:-0.3em;
+  
 }
 
 .nav-item {
@@ -1201,14 +1202,10 @@ button[disabled] {
     padding: 0.5em;
   }
 
-  
-  
-
   .card-text-2 {
     grid-column: 1/4;
     padding-left: 1em;
   }
-
 
   .img-container2-dt img {
     width: 100%;
