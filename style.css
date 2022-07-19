@@ -4,6 +4,7 @@
 body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   text-align: center;
+  margin: 0;
 }
 
 label {
@@ -129,6 +130,13 @@ ul a {
   color: #4d5666;
 }
 
+.nav-item a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
 .base-button a {
   text-decoration: none;
   font-weight: 550;
@@ -168,15 +176,96 @@ ul a {
   display: none;
 }
 
+.nav-container.active {
+  position: fixed;
+}
+
 .nav-container {
-  width: 375px;
-  padding-top: 1px;
+  min-width: 375px;
+  width: 100%;
   display: flex;
+  padding: 1em 0;
   align-items: center;
   justify-content: space-between;
-  border-left: 1px solid rgb(221 217 217);
-  border-right: 1px solid rgb(221 217 217);
-  margin: auto;
+  top: 0;
+  position: fixed;
+  background: white;
+}
+
+.menu-icon {
+  margin-right: 1.5em;
+}
+
+.logo-text {
+  margin-left: 1.5em;
+}
+
+.nav-menu {
+  display: flex;
+  flex-flow: column;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  background: #0e23e6;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  position: fixed;
+  left: -120%;
+  transition: 0.3s;
+  padding-top: 4em;
+  margin-top: -0.3em;
+}
+
+.nav-item {
+  margin: 16px 0;
+  align-self: flex-start;
+}
+
+.x-icon {
+  position: absolute;
+  margin-left: 32%;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: #1a30ff;
+}
+
+.bar-x {
+  display: flex;
+  width: 20px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: inherit;
+}
+
+.bar-x:nth-child(2) {
+  opacity: 0;
+}
+
+.bar-x:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bar-x:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar.active {
+  background: inherit;
+}
+
+.bar-x.active {
+  background: white;
+}
+
+.nav-menu.active {
+  left: 0;
 }
 
 .nav-container .logo-text a {
@@ -491,25 +580,13 @@ main p {
 }
 
 #section-a {
+  margin-top: 3.5em;
   min-height: 718px;
   text-align: center;
-  width: 375px;
-  border-left: 1px solid rgb(221 217 217);
-  border-right: 1px solid rgb(221 217 217);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin: auto;
-}
-
-#section-a .bg-img {
-  position: absolute;
+  min-width: 375px;
   background: url("images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  width: 375px;
-  height: 718px;
-  margin-top: 0;
-  margin-left: 0;
-  z-index: -1;
+  background-size: contain;
 }
 
 .base-button {
@@ -518,13 +595,23 @@ main p {
   margin-left: 4px;
 }
 
+#section-a .wrap {
+  width: 100%;
+  min-width: 374px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 #section-a .middle-text {
   padding-top: 6em;
   align-self: flex-start;
 }
 
 #section-a .middle-text h1 {
-  width: 280px;
+  width: 80%;
   font-weight: 700;
   font-size: 48px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -537,7 +624,7 @@ main p {
 }
 
 #section-a .middle-text p {
-  width: 327px;
+  width: 80%;
   height: 146px;
   font-style: normal;
   font-weight: 400;
@@ -561,6 +648,7 @@ main p {
   line-height: 24px;
   color: #1a30ff;
   padding-left: 0.3em;
+  margin-top: 2px;
 }
 
 #section-a .media-icons {
@@ -908,10 +996,16 @@ button[disabled] {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     width: 100%;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   #section-first-bg {
     background: #e5e5e5;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 
   #section-first {
@@ -936,8 +1030,18 @@ button[disabled] {
 
   /* Style navigation bar */
 
-  .nav-container {
+  .menu-icon {
     display: none;
+  }
+
+  .nav-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: -1em;
+  }
+
+  .nav-container .logo-text {
+    grid-column: 2/5;
   }
 
   .list-container3-dt ul {
@@ -1371,7 +1475,7 @@ button[disabled] {
   .s5-dt h4 {
     display: flex;
     align-self: flex-start;
-    width: 117px;
+    width: 159px;
     height: 24px;
     font-style: normal;
     font-weight: 700;
@@ -1492,5 +1596,17 @@ button[disabled] {
 
   .s4-container-dt {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #section-a {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  #section-a {
+    background-size: contain;
   }
 }
