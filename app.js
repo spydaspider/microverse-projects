@@ -9,6 +9,77 @@ const bar3 = document.querySelector('.bar:nth-child(3)');
 
 const navMenu = document.querySelector('.nav-menu');
 const xIcon = document.querySelector('.x-icon');
+const works = document.querySelector('#works');
+const popupView = document.querySelector('.popup-view-bg');
+
+const projects = [
+  {
+    id: '1',
+    title: 'Tonic',
+    image: 'images/section-2.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea',
+    linkMobile: ['html', 'css', 'javascript'],
+  },
+  {
+    id: '2',
+    title: 'Multi-Post-Stories',
+    image: 'images/section-3.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea',
+    link: ['html', 'css', 'javascript'],
+  },
+  {
+    id: '3',
+    title: 'Tonic',
+    image: 'images/section-4.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea',
+    link: ['html', 'css', 'javascript'],
+  },
+  {
+    id: '4',
+    title: 'Multi-Post-Stories',
+    image: 'images/section-5.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea',
+    link: ['html', 'css', 'javascript'],
+  },
+  {
+    id: '5',
+    title: 'Tonic',
+
+    image: 'images/desktop-section-1.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea',
+    link: ['html', 'ruby.on.rails', 'css', 'javascript'],
+  },
+  {
+    id: '6',
+    title: 'Multi-Post-Stories',
+    image: 'images/desktop-section-2.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea',
+    link: ['html', 'ruby.on.rails', 'css', 'javascript'],
+  },
+  {
+    id: '7',
+    title: 'FaceBook 360',
+    image: 'images/desktop-section-3.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea',
+    link: ['html', 'ruby.on.rails', 'css', 'javascript'],
+  },
+  {
+    id: '8',
+    title: 'Uber Navigation',
+    image: 'images/desktop-section-4.png',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea',
+    link: ['html', 'ruby.on.rails', 'css', 'javascript'],
+  },
+];
+
 menuIcon.addEventListener('click', () => {
   menuIcon.classList.toggle('active');
   navMenu.classList.toggle('active');
@@ -29,6 +100,7 @@ xIcon.addEventListener('click', () => {
   bar3.classList.remove('active');
   navContainer.classList.remove('active');
 });
+
 document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click', () => {
   menuIcon.classList.remove('active');
   navMenu.classList.remove('active');
@@ -39,3 +111,26 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   bar3.classList.remove('active');
   navContainer.classList.remove('active');
 }));
+
+function populatePopupMenu(parentId) {
+  projects.forEach((project) => {
+    if (parentId === project.id) {
+      document.getElementById('pop-header').innerHTML = project.title;
+      document.getElementById('');
+      document.getElementById('mobile-image').src = project.image;
+      document.getElementById('desktop-image').src = project.image;
+      // pass id to function to make list.
+      /*       addLinks(project.link);
+       */ popupView.classList.add('active');
+    }
+  });
+}
+works.addEventListener('click', (event) => {
+  if (event.target.className === 'btn') {
+    const parentId = event.target.parentNode.id;
+    populatePopupMenu(parentId);
+  }
+  if (event.target.className === 'stripe') {
+    popupView.classList.remove('active');
+  }
+});
