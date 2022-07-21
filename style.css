@@ -367,14 +367,14 @@ main p {
   margin-left: 1em;
   padding: 0;
 }
-.popup-links{
+.popup-links {
   display: flex;
   gap: 1em;
   padding: 0;
   margin-left: 1em;
 }
 
-.popup-links li{
+.popup-links li {
   font-size: 12px;
   color: #6070ff;
   background: #ebebff;

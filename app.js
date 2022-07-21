@@ -121,7 +121,7 @@ function populatePopupMenu(parentId) {
       document.getElementById('desktop-image').src = project.image;
       // pass id to function to make list.
       /*       addLinks(project.link);
- */ popupView.classList.add('active');
+       */ popupView.classList.add('active');
     }
   });
 }
