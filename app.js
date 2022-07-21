@@ -134,3 +134,42 @@ works.addEventListener('click', (event) => {
     popupView.classList.remove('active');
   }
 });
+
+// function for validating the email.
+function isValidatedEmail(email) {
+  // logic for the validation goes here.
+  // Converting the string to array
+  // set this email to lower and compare them.
+  const lowerEmail = email.toLowerCase();
+  if (email === lowerEmail) {
+    return true;
+  }
+  return false;
+}
+
+// Validate form
+const addMobileForm = document.forms['mobile-form'];
+const addDesktopForm = document.forms['dt-form'];
+const errorMsgMobile = document.querySelector('.error-msg-mob');
+const errorMsgDesktop = document.querySelector('.error-msg');
+// validate mobile form first
+addMobileForm.addEventListener('submit', (e) => {
+  const email = addMobileForm.querySelector('input[type = "email"]').value;
+  if (isValidatedEmail(email)) {
+    errorMsgMobile.classList.remove('active');
+  } else {
+    e.preventDefault();
+    errorMsgMobile.classList.add('active');
+  }
+});
+// Validate Desktop form
+addDesktopForm.addEventListener('submit', (e) => {
+  const email = addDesktopForm.querySelector('input[type = "email"]').value;
+
+  if (isValidatedEmail(email)) {
+    errorMsgMobile.classList.remove('active');
+  } else {
+    e.preventDefault();
+    errorMsgDesktop.classList.add('active');
+  }
+});
