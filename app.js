@@ -112,4 +112,25 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navContainer.classList.remove('active');
 }));
 
-
+function populatePopupMenu(parentId) {
+  projects.forEach((project) => {
+    if (parentId === project.id) {
+      document.getElementById('pop-header').innerHTML = project.title;
+      document.getElementById('');
+      document.getElementById('mobile-image').src = project.image;
+      document.getElementById('desktop-image').src = project.image;
+      // pass id to function to make list.
+      /*       addLinks(project.link);
+ */ popupView.classList.add('active');
+    }
+  });
+}
+works.addEventListener('click', (event) => {
+  if (event.target.className === 'btn') {
+    const parentId = event.target.parentNode.id;
+    populatePopupMenu(parentId);
+  }
+  if (event.target.className === 'stripe') {
+    popupView.classList.remove('active');
+  }
+});
