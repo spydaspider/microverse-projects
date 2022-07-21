@@ -1135,6 +1135,15 @@ button[disabled] {
   font-size: 18px;
 }
 
+.error-msg-mob {
+  color: red;
+  display: none;
+}
+
+.error-msg-mob.active {
+  display: block;
+}
+
 #section-7-dt input[type="submit"] {
   box-sizing: border-box;
   padding: 1em 2px;
@@ -1789,6 +1798,15 @@ button[disabled] {
 
   #section-7-dt textarea {
     width: 400px;
+  }
+
+  .error-msg {
+    color: red;
+    display: none;
+  }
+
+  .error-msg.active {
+    display: block;
   }
 
   #section-7-dt input[type="submit"] {
