@@ -135,6 +135,18 @@ works.addEventListener('click', (event) => {
   }
 });
 
+// function for validating the email.
+function isValidatedEmail(email) {
+  // logic for the validation goes here.
+  // Converting the string to array
+  // set this email to lower and compare them.
+  const lowerEmail = email.toLowerCase();
+  if (email === lowerEmail) {
+    return true;
+  }
+  return false;
+}
+
 // Validate form
 const addMobileForm = document.forms['mobile-form'];
 const addDesktopForm = document.forms['dt-form'];
