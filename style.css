@@ -188,6 +188,14 @@ ul a {
   padding-left: 1.5em;
 }
 
+.popup-links li {
+  font-size: 12px;
+  color: #6070ff;
+  background: #ebebff;
+  padding: 0.5em;
+  border-radius: 8px;
+}
+
 .base-icon ul li {
   list-style: none;
 }
@@ -367,19 +375,12 @@ main p {
   margin-left: 1em;
   padding: 0;
 }
+
 .popup-links {
   display: flex;
   gap: 1em;
   padding: 0;
   margin-left: 1em;
-}
-
-.popup-links li {
-  font-size: 12px;
-  color: #6070ff;
-  background: #ebebff;
-  padding: 0.5em;
-  border-radius: 8px;
 }
 
 .popup-buttons {
