@@ -308,7 +308,6 @@ ul a {
   width: 100%;
   translate: all 0.3s ease-in-out;
   overflow-y: auto;
-  
 }
 
 .d-link {
@@ -1334,22 +1333,19 @@ button[disabled] {
     margin-top: 1em;
     margin-right: -5em;
   }
-   .m-left{
-     padding: 0;
-     width: 150px;
-     margin-left: 2em;
-     padding:0;
-    
-   }
-   
-   
+
+  .m-left {
+    padding: 0;
+    width: 150px;
+    margin-left: 2em;
+  }
+
   .d-link {
     display: flex;
     gap: 0.5em;
     width: 30px;
     margin-left: 2em;
     margin-top: -1em;
-  
   }
 
   .popup-buttons {
@@ -1359,7 +1355,6 @@ button[disabled] {
 
   .popup-buttons .see-live {
     width: 140px;
-    
   }
 
   .popup-buttons .see-source {
