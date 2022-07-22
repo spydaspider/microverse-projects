@@ -80,14 +80,14 @@ const projects = [
   },
 ];
 
-//Object for saving form data.
-//Create initial object for the form data.
-let formData = {
-  name: "",
-  email: "",
-  message: "",
-}
-//load the object with the form data.
+// Object for saving form data.
+// Create initial object for the form data.
+const formData = {
+  name: '',
+  email: '',
+  message: '',
+};
+// load the object with the form data.
 
 menuIcon.addEventListener('click', () => {
   menuIcon.classList.toggle('active');
@@ -143,17 +143,15 @@ works.addEventListener('click', (event) => {
     popupView.classList.remove('active');
   }
 });
-//Function to save form data
-function saveFormData(name, email, message)
-{
-   //Put values into the object.
-   formData.name = name;
-   formData.email = email;
-   formData.message = message;
-   //Serialize the object with JSON
-   let formDataSerialized = JSON.stringify(formData);
-   localStorage.setItem('formData',formDataSerialized);
-   
+// Function to save form data
+function saveFormData(name, email, message) {
+  // Put values into the object.
+  formData.name = name;
+  formData.email = email;
+  formData.message = message;
+  // Serialize the object with JSON
+  const formDataSerialized = JSON.stringify(formData);
+  localStorage.setItem('formData', formDataSerialized);
 }
 // function for validating the email.
 function isValidatedEmail(email) {
@@ -174,15 +172,14 @@ const errorMsgMobile = document.querySelector('.error-msg-mob');
 const errorMsgDesktop = document.querySelector('.error-msg');
 // validate mobile form first
 addMobileForm.addEventListener('submit', (e) => {
-  let email = addMobileForm.querySelector('input[type = "email"]').value;
-  let name = document.getElementById('name').value;
-  let message = document.getElementById('message').value;
-
+  const email = addMobileForm.querySelector('input[type = "email"]').value;
+  const name = document.getElementById('name').value;
+  const message = document.getElementById('message').value;
 
   if (isValidatedEmail(email)) {
     errorMsgMobile.classList.remove('active');
-    //Save form data into storage.
-      saveFormData(name, email, message);
+    // Save form data into storage.
+    saveFormData(name, email, message);
   } else {
     e.preventDefault();
     errorMsgMobile.classList.add('active');
@@ -190,55 +187,48 @@ addMobileForm.addEventListener('submit', (e) => {
 });
 // Validate Desktop form
 addDesktopForm.addEventListener('submit', (e) => {
-  let email = addDesktopForm.querySelector('input[type = "email"]').value;
-  let name = document.getElementById('name-dt').value;
-  let message = document.getElementById('message-dt').value;
+  const email = addDesktopForm.querySelector('input[type = "email"]').value;
+  const name = document.getElementById('name-dt').value;
+  const message = document.getElementById('message-dt').value;
 
   if (isValidatedEmail(email)) {
     errorMsgMobile.classList.remove('active');
-    saveFormData(name,email,message);
+    saveFormData(name, email, message);
   } else {
     e.preventDefault();
     errorMsgDesktop.classList.add('active');
   }
 });
 
-//Set eventListeners for the form with change.
-addMobileForm.addEventListener('change', (e) => {
-  let email = addMobileForm.querySelector('input[type = "email"]').value;
-  let name = document.getElementById('name').value;
-  let message = document.getElementById('message').value;
+// Set eventListeners for the form with change.
+addMobileForm.addEventListener('change', () => {
+  const email = addMobileForm.querySelector('input[type = "email"]').value;
+  const name = document.getElementById('name').value;
+  const message = document.getElementById('message').value;
 
-
-  
-      saveFormData(name, email, message);
-  
-  }
-);
-// Validate Desktop form
-addDesktopForm.addEventListener('change', (e) => {
-  let email = addDesktopForm.querySelector('input[type = "email"]').value;
-  let name = document.getElementById('name-dt').value;
-  let message = document.getElementById('message-dt').value;
-
- 
-    saveFormData(name,email,message);
-  
+  saveFormData(name, email, message);
 });
-//Function to get localStorage objects.
-if(localStorage !== null)
-{
-  //populate the form with the data.
-  let nameFieldPopulate = document.getElementById('name');
-  let emailFieldPopulate = document.getElementById('email');
-  let messageFieldPopulate = document.getElementById('message');
+// Validate Desktop form
+addDesktopForm.addEventListener('change', () => {
+  const email = addDesktopForm.querySelector('input[type = "email"]').value;
+  const name = document.getElementById('name-dt').value;
+  const message = document.getElementById('message-dt').value;
 
-  let nameDtFieldPopulate = document.getElementById('name-dt');
-  let messageDtFieldPopulate = document.getElementById('message-dt');
-  let emailDtFieldPopulate = document.getElementById('email-dt');
-  //Get the object from the local storage.
-  //Deserialize the object.
-  let deserializedFormData = JSON.parse(localStorage.getItem('formData'));
+  saveFormData(name, email, message);
+});
+// Function to get localStorage objects.
+if (localStorage !== null) {
+  // populate the form with the data.
+  const nameFieldPopulate = document.getElementById('name');
+  const emailFieldPopulate = document.getElementById('email');
+  const messageFieldPopulate = document.getElementById('message');
+
+  const nameDtFieldPopulate = document.getElementById('name-dt');
+  const messageDtFieldPopulate = document.getElementById('message-dt');
+  const emailDtFieldPopulate = document.getElementById('email-dt');
+  // Get the object from the local storage.
+  // Deserialize the object.
+  const deserializedFormData = JSON.parse(localStorage.getItem('formData'));
   nameFieldPopulate.value = deserializedFormData.name;
   emailFieldPopulate.value = deserializedFormData.email;
   messageFieldPopulate.value = deserializedFormData.message;
