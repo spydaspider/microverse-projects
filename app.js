@@ -226,7 +226,23 @@ addDesktopForm.addEventListener('change', (e) => {
   
 });
 //Function to get localStorage objects.
+if(localStorage !== null)
+{
+  //populate the form with the data.
+  let nameFieldPopulate = document.getElementById('name');
+  let emailFieldPopulate = document.getElementById('email');
+  let messageFieldPopulate = document.getElementById('message');
 
-
-
-
+  let nameDtFieldPopulate = document.getElementById('name-dt');
+  let messageDtFieldPopulate = document.getElementById('message-dt');
+  let emailDtFieldPopulate = document.getElementById('email-dt');
+  //Get the object from the local storage.
+  //Deserialize the object.
+  let deserializedFormData = JSON.parse(localStorage.getItem('formData'));
+  nameFieldPopulate.value = deserializedFormData.name;
+  emailFieldPopulate.value = deserializedFormData.email;
+  messageFieldPopulate.value = deserializedFormData.message;
+  nameDtFieldPopulate.value = deserializedFormData.name;
+  emailDtFieldPopulate.value = deserializedFormData.email;
+  messageDtFieldPopulate.value = deserializedFormData.message;
+}
