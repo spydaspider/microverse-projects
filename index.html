@@ -1,797 +1,318 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Overview</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header id="headline">
-      <nav class="nav-container">
-        <div class="logo-text"><a href="#">Spyda</a></div>
-      <div class = "mobile-menu">
-        <ul class = "nav-menu">
-          <li class = "nav-item"><a href = "#works">Portfolio</a></li>
-          <li class = "nav-item"><a href = "#section-5">About</a></li>
-          <li class = "nav-item"><a href = "#section-7">Contact</a></li>
-        </ul>
-        <div class="x-icon x-style">
-          <span class = "bar-x"></span>
-          <span class = "bar-x"></span>
-          <span class = "bar-x"></span>
-        
-        </div>
-      </div>
-      <nav class="nav-container-wide">
-       <!-- <div class="logo-text"><a href="#">Spyda</a></div>---->
-        <div class="right-side">
-          <ul>
-            <li>
-              <a href="/">Portfolio</a>
-            </li>
-            <li>
-              <a href="/">About</a>
-            </li>
-            <li>
-              <a href="/">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="menu-icon">
-        <span class = "bar"></span>
-        <span class = "bar"></span>
-        <span class = "bar"></span>
-      
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Dickson's developer portfolio: projects, skills, and contact information.">
+
+  <title>Dickson | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Spyda home">
+        Spyda<span>.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a
+          class="nav-github"
+          href="https://github.com/spydaspider"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
       </div>
     </nav>
-    </header>
-    <main>
-      <div id="section-a" class="grid">
-        <div class = "wrap">
-        <div class="middle-text">
-          <h1>I'm Dickson Glad to see you.</h1>
-          <p>
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hestiate to
-            contact me.
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+
+      <div class="hero-inner wrap">
+        <p class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          SOFTWARE DEVELOPER
+        </p>
+
+        <h1>
+          Hi, I'm Dickson.<br>
+          <span>I build for the web.</span>
+        </h1>
+
+        <p class="hero-copy">
+          I enjoy turning ideas into useful, accessible digital experiences.
+          Explore my work, see what I'm learning, or get in touch about a project.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore my work <span aria-hidden="true">↓</span>
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://github.com/spydaspider"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero-foot">
+          <span>Driven by curiosity</span>
+          <span class="hero-line" aria-hidden="true"></span>
+          <span>Built with care</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Projects<span class="heading-period">.</span></h2>
+          </div>
+
+          <p class="section-intro">
+            Explore my public GitHub repositories. Each project offers
+            a closer look at my code, ideas, and progress as a developer.
           </p>
         </div>
-        <div class="base-text">LET'S CONNECT</div>
-        <div class="media-icons">
-          <ul>
-            <li>
-              <a href=""
-                ><img
-                  src="images/vector.svg"
-                  alt="twitter icon link on  mobile"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="images/in.svg" alt="linkedin icon link on mobile"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="images/vectorm.png" alt="mixx icon link on mobile"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img
-                  src="images/vectorhead.png"
-                  alt="github icon link on mobile"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img
-                  src="images/vectorhand.png"
-                  alt="click the join link below"
-              /></a>
-            </li>
-          </ul>
+
+        <div class="project-toolbar">
+          <p
+            id="project-status"
+            class="project-status"
+            role="status"
+            aria-live="polite"
+          >
+            Loading projects from GitHub…
+          </p>
+
+          <label class="filter-label" for="language-filter">
+            Filter by language
+
+            <select id="language-filter">
+              <option value="all">All languages</option>
+            </select>
+          </label>
         </div>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project-skeleton" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </article>
+
+          <article class="project-skeleton" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </article>
+
+          <article class="project-skeleton" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </article>
         </div>
-      </div>
-      <div id="section-first-bg">
-        <div id="section-first">
-          <div id="section-a-dt">
-            <div class="section-a-content-dt">
-              <div class="middle-text-dt">
-                <h2>I'm Dickson Glad to see you.</h2>
-                <p>
-                  I’m a software developer! I can help you build a product ,
-                  feature or website Look through some of my work and
-                  experience! If you like what you see and have a project you
-                  need coded, don’t hestiate to contact me.
-                </p>
-              </div>
-              <div class="base-text-dt"><h4>LET'S CONNECT</h4></div>
-              <div class="media-icons-dt">
-                <ul>
-                  <li>
-                    <a href=""
-                      ><img src="images/vector.svg" alt="twitter icon link"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="images/in.svg" alt="linkedin icon link"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="images/vectorm.png" alt="mixx icon link"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="images/vectorhead.png" alt="github icon link"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="images/vectorhand.png" alt="join icon link"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+
+        <div class="github-cta">
+          <span>Want to explore more?</span>
+
+          <a
+            href="https://github.com/spydaspider?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Browse all repositories <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
-      <section id="works">
-        <div id="section-1">
-          <!----Markup for desktop card-1-->
-          <div class="s1-container-dt">
-            <div class="img-container">
-              <img
-                src="images/desktop-section-1.png"
-                alt="Image for first card on Desktop Version: Tonic header"
-              />
-            </div>
-            <div class="card-text">
-              <h2>Tonic</h2>
-              <div class="list-container1-dt">
-                <ul>
-                  <li><a href="" class="text">CANOPY</a></li>
-                  <li><img src="images/c1.png" alt="dot icon" /></li>
-                  <li><a href="" class="text-2">Back End Dev</a></li>
-                  <li><img src="images/c1.png" alt="dot icon" /></li>
-                  <li><a href="" class="text-3">2015</a></li>
-                </ul>
-              </div>
+    </section>
 
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <div class="base-links margin-top">
-                <ul>
-                  <li><a href="" class="base-link-text1">html</a></li>
-                  <li><a href="" class="base-link-text2">css</a></li>
-                  <li><a href="" class="base-link-text3">javascript</a></li>
-                </ul>
-              </div>
-              <div id = "5" class="base-button">
-                <button class = "btn">See Projects</button>
-              </div>
-            </div>
-          </div>
-          <!---End of desktop card 1 Mark up-->
+    <section class="section about-section" id="about">
+      <div class="wrap about-layout">
+        <div class="about-main">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
 
-          <!----pop up view--->
-          <div class = "popup-view-bg">
-            <div class = "popup-view">
-            <div class = "top-bar"> 
-            <h3 id = "pop-header">Tonic</h3>
-            <div class = "pop-up-close-button">
-              <span class = "stripe"></span>
-              <span class = "stripe"></span>
-              <span class = "stripe"></span>
-            </div>
-            </div>
-            <div class="popup-list">
-              <ul>
-                <li><a href="" class="text">CANOPY</a></li>
-                <li><img src="images/c1.png" alt="dot icon" /></li>
-                <li><a href="" class="text-2">Back End Dev</a></li>
-                <li><img src="images/c1.png" alt="dot icon" /></li>
-                <li><a href="" class="text-3">2015</a></li>
-              </ul>
-              </div>
-              <div class = "popup-image-wrapper">
-                <img id = "mobile-image" class = "for-mobile" src = "images/section-2.png" alt = "Image of section card"/>
-                <img id = "desktop-image" class = "for-desktop" src = "images/desktop-section-1.png" alt = "Image of section card"/>
-              </div>
-              <div class = "popup-context">
-                <div>            
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the lea</p>
-                </div>
-                <div class = "flex-right">
-              <div class = "m-left">
-                <ul class = "popup-links" id = "base-uls-mobile">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                 
-                </ul>
-              </div>
-              <div class = "d-link">
-                <ul id = "base-uls-dt" class = "popup-links">
-                <li class="base-link-text1">github</li>
-                <li class="base-link-text2">ruby</li>
-                <li class="base-link-text3">bootstraps</li>
-                </ul>
-              </div>
-              <div class = "popup-buttons">
-                <button class = "see-live">See live<img src ="images/icon.png" alt = "icon"/></button>
-                <button class = "see-source">See Source<img src ="images/github-icon.png" alt = "icon"/></button>
-              </div>
-              </div>
-              </div>
-            </div>
-            </div>
-          <!----End of pop up view-->
-          <div class="s1-container">
-            <div class="image-container"></div>
-            <div class="content">
-              <h2>Tonic</h2>
-              <div class="list-container">
-                <ul>
-                  <li><a href="" class="text">CANOPY</a></li>
-                  <li>
-                    <img
-                      src="images/c1.png"
-                      alt="dot icon after the word:Canopy"
-                    />
-                  </li>
-                  <li><a href="" class="text-2">Back End Dev</a></li>
-                  <li>
-                    <img
-                      src="images/c1.png"
-                      alt="dot icon after the word: Back End Dev"
-                    />
-                  </li>
-                  <li><a href="" class="text-3">2015</a></li>
-                </ul>
-              </div>
-              <div class="para">
-                <p>
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-              </div>
+          <h2>
+            Curious by nature.<br>
+            <span>Developer by practice.</span>
+          </h2>
 
-              <div class="base-links">
-                <ul>
-                  <li><a href="" class="base-link-text1">html</a></li>
-                  <li><a href="" class="base-link-text2">css</a></li>
-                  <li><a href="" class="base-link-text3">javascript</a></li>
-                </ul>
-              </div>
-              <div id = "1" class="base-button">
-                <button class = "btn">See Project</button>
-              </div>
-            </div>
-          </div>
+          <p>
+            I'm Dickson, a developer who enjoys building web experiences
+            and improving them one iteration at a time. I value clear code,
+            thoughtful design, and learning through practical projects.
+          </p>
+
+          <p>
+            I use each project as an opportunity to strengthen my skills,
+            solve problems, and create digital experiences that are useful
+            and easy to navigate.
+          </p>
+
+          <a
+            class="text-link"
+            href="https://github.com/spydaspider"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore my code <span aria-hidden="true">↗</span>
+          </a>
         </div>
-        <div id="section-2">
-          <!---start markup for s2 Desktop-->
-          <div class="s2-container-dt">
-            <div class="card-text-2">
-              <h3>Multi-Post-Stories</h3>
-              <div class="list-container2-dt">
-                <ul>
-                  <li><a href="" class="text">FACEBOOK</a></li>
-                  <li><img src="images/c1.png" alt="dot icon" /></li>
-                  <li><a href="" class="text-2">Full Stack Dev</a></li>
-                  <li><img src="images/c1.png" alt="second dot icon" /></li>
-                  <li><a href="" class="text-3">2015</a></li>
-                </ul>
-              </div>
-              <div>
-                <p>
-                  Experimental content creation feature that allows users to add.
-                </p>
-              </div>
-              <div class="base-links">
-                <ul>
-                  <li><a href="" class="base-link-text1">html</a></li>
-                  <li><a href="" class="base-link-text2">Ruby.on.rails</a></li>
-                  <li><a href="" class="base-link-text2">css</a></li>
-                  <li><a href="" class="base-link-text3">javascript</a></li>
-                </ul>
-              </div>
-              <div id = "6" class="base-button">
-                <button class = "btn">See Project</button>
-              </div>
-            </div>
-            <div class="img-container2-dt">
-              <img
-                src="images/desktop-section-2.png"
-                alt="Image of the second card of the Desktop version: Multi-POST-Stories"
-              />
-            </div>
-          </div>
-          <!---End Mark up for s2 Desktop -->
 
-          <!------End of styling for Desktop card 2-->
-          <div class="s2-container">
-            <div class="image-container2"></div>
+        <div class="skills-panel">
+          <p class="eyebrow">TOOLS &amp; TECHNOLOGIES</p>
 
-            <h2 class="newh2">Multi-Post-Stories</h2>
-            <div class="list-container">
-              <ul>
-                <li><a href="" class="text">CANOPY</a></li>
-                <li><img src="images/c1.png" alt="the dot icon" /></li>
-                <li><a href="" class="text-2">Back End Dev</a></li>
-                <li><img src="images/c1.png" alt="The dot icons" /></li>
-                <li><a href="" class="text-3">2015</a></li>
-              </ul>
-            </div>
-            <div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </div>
-            <div class="base-links flex-card">
-              <ul>
-                <li><a href="" class="base-link-text1">html</a></li>
-                <li><a href="" class="base-link-text2">css</a></li>
-                <li><a href="" class="base-link-text3">javascript</a></li>
-              </ul>
-            </div>
-            <div id = "2" class="base-button">
-              <button class = "btn">See Project</button>
-            </div>
+          <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Git &amp; GitHub</span>
+            <span>Responsive design</span>
+            <span>Problem solving</span>
+            <span>Continuous learning</span>
           </div>
+
+          <p class="skills-note">
+            Keep this list aligned with the technologies and skills you
+            can confidently demonstrate in your projects.
+          </p>
         </div>
-        <div id="section-3">
-          <!---Begin Markup for Desktop card 3-->
-          <div class="s3-container-dt">
-            <div class="img-container3-dt">
-              <img
-                src="images/desktop-section-3.png"
-                alt="Image of the third card: The Facebook 360 section "
-              />
-            </div>
-            <div class="card-text-3">
-              <h3>FaceBook 360</h3>
-              <div class="list-container3-dt">
-                <ul>
-                  <li><a href="" class="text">FACEBOOK</a></li>
-                  <li><img src="images/c1.png" alt="dot icon" /></li>
-                  <li><a href="" class="text-2">Full Stack Dev</a></li>
-                  <li><img src="images/c1.png" alt="dot icon" /></li>
-                  <li><a href="" class="text-3">2015</a></li>
-                </ul>
-              </div>
-              <div>
-                <p>
-                  Exploring the future of media in Facebook's first Virtual
-                  Reality app; a place to discover
-                </p>
-              </div>
-              <div class="base-links">
-                <ul>
-                  <li><a href="" class="base-link-text1">html</a></li>
-                  <li><a href="" class="base-link-text2">Ruby.on.rails</a></li>
-                  <li><a href="" class="base-link-text2">css</a></li>
-                  <li><a href="" class="base-link-text3">javascript</a></li>
-                </ul>
-              </div>
-              <div id = "7" class="base-button">
-                <button class = "btn">See Project</button>
-              </div>
-            </div>
-          </div>
+      </div>
+    </section>
 
-          <!----End Markup for Desktop styling 3-->
-          <div class="s3-container">
-            <div class="image-container3"></div>
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow eyebrow-light">LET'S TALK</p>
 
-            <h2>Tonic</h2>
-            <div class="list-container">
-              <ul>
-                <li><a href="" class="text">CANOPY</a></li>
-                <li><img src="images/c1.png" alt="dot icon" /></li>
-                <li><a href="" class="text-2">Back End Dev</a></li>
-                <li><img src="images/c1.png" alt="dot icon" /></li>
-                <li><a href="" class="text-3">2015</a></li>
-              </ul>
-            </div>
-            <div>
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-            </div>
-            <div class="base-links">
-              <ul>
-                <li><a href="" class="base-link-text1">html</a></li>
-                <li><a href="" class="base-link-text2">css</a></li>
-                <li><a href="" class="base-link-text3">javascript</a></li>
-              </ul>
-            </div>
-            <div id = "3" class="base-button">
-              <button class = "btn">See Project</button>
-            </div>
-          </div>
+          <h2>
+            Have an idea?<br>
+            Let's build it.
+          </h2>
+
+          <p>
+            Have a project, collaboration, or opportunity in mind?
+            I'd be happy to hear about it.
+          </p>
+
+          <a
+            class="contact-email"
+            href="https://github.com/spydaspider"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Connect on GitHub <span aria-hidden="true">↗</span>
+          </a>
         </div>
-        <div id="section-4">
-          <!----------Begin mark for card-4---->
 
-          <div class="s4-container-dt">
-            <div class="card-text-4">
-              <h3>Uber Navigation</h3>
-              <div class="list-container4-dt">
-                <ul>
-                  <li><a href="" class="text">FACEBOOK</a></li>
-                  <li>
-                    <img
-                      src="images/c1.png"
-                      alt="small round icon like a dot"
-                    />
-                  </li>
-                  <li><a href="" class="text-2">Full Stack Dev</a></li>
-                  <li>
-                    <img src="images/c1.png" alt="small icon like a dot" />
-                  </li>
-                  <li><a href="" class="text-3">2015</a></li>
-                </ul>
-              </div>
-              <div>
-                <p>
-                  A smart assistant to make driving more safe, efficient, and
-                  fun by unlocking your car.
-                </p>
-              </div>
-              <div class="base-links">
-                <ul>
-                  <li><a href="" class="base-link-text1">html</a></li>
-                  <li><a href="" class="base-link-text2">Ruby.on.rails</a></li>
-                  <li><a href="" class="base-link-text2">css</a></li>
-                  <li><a href="" class="base-link-text3">javascript</a></li>
-                </ul>
-              </div>
-              <div id = "8" class="base-button">
-                <button class = "btn">See Project</button>
-              </div>
-            </div>
-            <div class="img-container4-dt">
-              <img
-                src="images/desktop-section-4.png"
-                alt="Image of the fourth card: Uber Navigation"
-              />
-            </div>
-          </div>
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="https://formspree.io/f/mbjwbode"
+          method="post"
+        >
+          <label for="name">Your name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your name"
+            maxlength="80"
+            autocomplete="name"
+            required
+          >
 
-          <!--------End Mark up for card 4----->
+          <label for="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          >
 
-          <div class="s4-container">
-            <div class="image-container4"></div>
+          <label for="message">How can I help?</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell me a little about your project..."
+            rows="5"
+            maxlength="2000"
+            required
+          ></textarea>
 
-            <h2 class="newh4">Multi-Post-Stories</h2>
-            <div class="list-container">
-              <ul>
-                <li><a href="" class="text">CANOPY</a></li>
-                <li><img src="images/c1.png" alt="dot icon" /></li>
-                <li><a href="" class="text-2">Back End Dev</a></li>
-                <li><img src="images/c1.png" alt="dot icon" /></li>
-                <li><a href="" class="text-3">2015</a></li>
-              </ul>
-            </div>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
+          <p class="form-note">
+            Please enter a valid email address.
+          </p>
 
-            <div class="base-links">
-              <ul>
-                <li><a href="" class="base-link-text1">html</a></li>
-                <li><a href="" class="base-link-text2">css</a></li>
-                <li><a href="" class="base-link-text3">javascript</a></li>
-              </ul>
-            </div>
-            <div id = "4" class="base-button">
-              <button class = "btn">See Project</button>
-            </div>
-          </div>
-        </div>
-        <div id="section-5">
-          <!-------begin Mark up for Desktop ---->
+          <button class="button button-light" type="submit">
+            Send message <span aria-hidden="true">↗</span>
+          </button>
 
-          <div class="s5-dt">
-            <div class="group-1">
-              <div class="about-text-dt">
-                <div class="head-text-dt">
-                  <h2>About Myself</h2>
-                </div>
-                <p>
-                  Hello I’m a software developer! I can help you build a product
-                  , feature or website Look through some of my work and
-                  experience! If you like what you see and have a project you
-                  need coded, don’t hestiate to contact me.
-                </p>
-              </div>
-              <div>
-                <h4>LET'S CONNECT</h4>
-              </div>
+          <p
+            class="form-status"
+            id="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-              <div class="base-icon-5-dt">
-                <ul>
-                  <li>
-                    <a href=""
-                      ><img
-                        src="images/vector.svg"
-                        alt="icon link to visit twitter"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img
-                        src="images/in.svg"
-                        alt="icon link to visit linkedin"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img src="images/vectorhand.png" alt="icon link of join"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img
-                        src="images/vectorhead.png"
-                        alt="icon link to visit github"
-                    /></a>
-                  </li>
-                  <li>
-                    <a href=""
-                      ><img
-                        src="images/vectorm.png"
-                        alt="icon link to visit mixx"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="resume">
-                <button type="button" disabled>Get my resume</button>
-              </div>
-            </div>
-            <div class="group-2">
-              <div class="langv">
-                <h3>Languages</h3>
-                <img src="images/Union.png" alt="drop down icon" />
-              </div>
-              <div class="tech">
-                <ul>
-                  <li class="item1">
-                    <img src="images/javascript.png" alt="javascript logo" />
-                  </li>
-                  <li class="item2">
-                    <img src="images/html-logo.png" alt="html logo" />
-                  </li>
-                  <li class="item3">
-                    <img src="images/cssLogo.png" alt="CSS logo" />
-                  </li>
-                </ul>
-              </div>
-              <div class="frame">
-                <h3>Frameworks</h3>
-                <img
-                  src="images/union1.png"
-                  alt="drop down right for the skill section"
-                />
-              </div>
-              <div class="skill">
-                <h3>Skills</h3>
-                <img
-                  src="images/union1.png"
-                  alt="drop down for the skill section"
-                />
-              </div>
-            </div>
-          </div>
-          <!-----end of the mark up for section 5-->
-          <div class="s5">
-            <div class="about-text">
-              <div class="head-text">
-                <h2>About Myself</h2>
-              </div>
-              <p>
-                Hello I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-              </p>
-            </div>
-            <div class="lc">LET'S CONNECT</div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#home">Spyda<span>.</span></a>
 
-            <div class="base-icon-5">
-              <ul>
-                <li>
-                  <a href=""
-                    ><img src="images/vector.svg" alt="Visit twitter website"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="images/in.svg" alt="Visit linkedin website"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="images/vectorhand.png" alt="join icon"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img
-                      src="images/vectorhead.png"
-                      alt="visit github website"
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="images/vectorm.png" alt="Visit mixx website"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-            <div class="resume">
-              <button type="button" disabled>Get my resume</button>
-            </div>
+      <p>Designed and built by Dickson.</p>
 
-            <div class="group-2">
-              <div class="langv">
-                <h3>Languages</h3>
-                <img
-                  src="images/Union.png"
-                  alt="drop-down icon for language section"
-                />
-              </div>
-              <div class="tech">
-                <ul>
-                  <li class="item1">
-                    <img
-                      src="images/Frame9.png"
-                      alt="logo of javascript technology"
-                    />
-                  </li>
-                  <li class="item2">
-                    <img
-                      src="images/Frame10.png"
-                      alt="logo of html technology"
-                    />
-                  </li>
-                  <li class="item3">
-                    <img
-                      src="images/Frame11.png"
-                      alt="logo of CSS technology"
-                    />
-                  </li>
-                </ul>
-              </div>
-              <div class="frame">
-                <h3>Frameworks</h3>
-                <img
-                  src="images/union1.png"
-                  alt="Frameworks section drop-down right"
-                />
-              </div>
-              <div class="skill">
-                <h3>Skills</h3>
-                <img
-                  src="images/union1.png"
-                  alt="Skills section drop-down right"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section id="section-7" class="grid">
-        <div class="background">
-          <div class="elements">
-            <div class="text-above">
-              <h2>Contact me</h2>
-              <p>
-                If you have an application you are interested in developing, a
-                feature that you need built or a project that needs coding. I’d
-                love to help with it
-              </p>
-            </div>
-            <form id = "mobile-form" action="https://formspree.io/f/mbjwbode" method="post">
-              <label for="name">Name:</label>
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Yeremias"
-                maxlength="30"
-                required
-              />
-              <label for="email">email:</label>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="natajayanj14@gmail.com"
-                required
-              />
-              <label for="message">Message:</label>
-
-              <textarea
-                id="message"
-                name="area"
-                placeholder="Write your message here"
-                maxlength="500"
-                required
-              ></textarea>
-              <small class = "error-msg-mob">Email should be in lowercase letters</small>
-              <input type="submit" name="submit" value="Get in Touch" />
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-7-dt" class="grid">
-        <div class="elements-dt">
-          <div class="text-above-dt">
-            <h3>Contact me</h3>
-            <p>
-              If you have an application you are interested in developing, a
-              feature that you need built or a project that needs coding. I’d
-              love to help with it
-            </p>
-          </div>
-          <form id = "dt-form"  action="https://formspree.io/f/mbjwbode" method="post">
-            <label for="name-dt">Name:</label>
-            <input
-              type="text"
-              id="name-dt"
-              name="name"
-              placeholder="Yeremias"
-              maxlength="30"
-              required
-            />
-            <label for="email-dt">email:</label>
-
-            <input
-              type="email"
-              id="email-dt"
-              name="email"
-              placeholder="natajayanj14@gmail.com"
-              required
-            />
-            <label for="message-dt">Message</label>
-
-            <textarea
-              id="message-dt"
-              name="area-dt"
-              placeholder="Write your message here"
-              maxlength="500"
-              required
-            ></textarea>
-            <small class = "error-msg">Email should be in lowercase letters</small>
-            <input type="submit" name="submit" value="Get in Touch" />
-          </form>
-        </div>
-      </section>
-    </footer>
-    <script src = "app.js"></script>
-  </body>
+      <a
+        href="https://github.com/spydaspider"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
+    </div>
+  </footer>
+</body>
 </html>
